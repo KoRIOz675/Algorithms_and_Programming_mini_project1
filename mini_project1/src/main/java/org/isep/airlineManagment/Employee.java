@@ -1,12 +1,12 @@
 package org.isep.airlineManagment;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Employee extends Person {
     protected int numberEmployee;
-    protected Date hiringDate;
+    protected LocalDateTime hiringDate;
 
-    public Employee(String name, String address, String contact, int numberEmployee, Date hiringDate) {
+    public Employee(String name, String address, String contact, int numberEmployee, LocalDateTime hiringDate) {
         super(name, address, contact);
         this.hiringDate = hiringDate;
         this.numberEmployee = numberEmployee;

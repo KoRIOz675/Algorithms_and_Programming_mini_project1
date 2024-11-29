@@ -1,14 +1,14 @@
 package org.isep.airlineManagment;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Book {
     private int reservationNumber;
-    private Date reservationDate;
+    private LocalDateTime reservationDate;
     private String status;
 
 
-    public Book(int reservationNumber, Date reservationDate, String status) {
+    public Book(int reservationNumber, LocalDateTime reservationDate, String status) {
         this.reservationNumber = reservationNumber;
         this.reservationDate = reservationDate;
         this.status = status;
