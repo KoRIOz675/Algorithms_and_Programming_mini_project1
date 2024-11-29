@@ -1,7 +1,5 @@
 package org.isep.airlineManagment;
 
-import java.util.Random;
-
 public class Aircraft {
     private String registration;
     private String model;
