@@ -13,4 +13,34 @@ public class Book {
         this.reservationDate = reservationDate;
         this.status = status;
     }
+
+
+    public int getReservationNumber() {
+        return this.reservationNumber;
+    }
+
+
+    public LocalDateTime getReservationDate() {
+        return this.reservationDate;
+    }
+
+
+    public String getStatus() {
+        return this.status;
+    }
+
+
+    public void setReservationNumber(int reservationNumber) {
+        this.reservationNumber = reservationNumber;
+    }
+
+
+    public void setReservationDate(LocalDateTime reservationDate) {
+        this.reservationDate = reservationDate;
+    }
+
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }
