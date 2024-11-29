@@ -20,12 +20,12 @@ public class Employee extends Person {
 
 
     public int getNumberEmployee() {
-        return numberEmployee;
+        return this.numberEmployee;
     }
 
 
     public LocalDateTime getHiringDate() {
-        return hiringDate;
+        return this.hiringDate;
     }
 
 

@@ -26,7 +26,7 @@ public class Passenger extends Person {
 
 
     public String getPassport() {
-        return passport;
+        return this.passport;
     }
 
 
