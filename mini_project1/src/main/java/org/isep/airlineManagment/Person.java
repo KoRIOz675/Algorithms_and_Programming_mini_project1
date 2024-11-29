@@ -26,26 +26,42 @@ public class Person {
     }
 
 
-    public int getId() {return this.id;}
+    public int getId() {
+        return this.id;
+    }
 
 
-    public String getName() {return this.name;}
+    public String getName() {
+        return this.name;
+    }
 
 
-    public String getAddress() {return this.address;}
+    public String getAddress() {
+        return this.address;
+    }
 
 
-    public String getContact() {return this.contact;}
+    public String getContact() {
+        return this.contact;
+    }
 
 
-    public void setId(int id) {this.id = id;}
+    public void setId(int id) {
+        this.id = id;
+    }
 
 
-    public void setName(String name) {this.name = name;}
+    public void setName(String name) {
+        this.name = name;
+    }
 
 
-    public void setAddress(String address) {this.address = address;}
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
 
-    public void setContact(String contact) {this.contact = contact;}
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
 }
