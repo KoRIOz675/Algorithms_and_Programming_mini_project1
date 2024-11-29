@@ -2,7 +2,7 @@ package org.isep.airlineManagment;
 
 import java.util.Date;
 
-public class AirlinePilot extends Employee{
+public class AirlinePilot extends Employee {
 
     private String licence;
     private int flightHours;
@@ -13,9 +13,9 @@ public class AirlinePilot extends Employee{
         this.licence = licence;
     }
 
-    public void assignFlight(){
+    public void assignFlight() {
     }
 
-    public void getFlight(){
+    public void getFlight() {
     }
 }

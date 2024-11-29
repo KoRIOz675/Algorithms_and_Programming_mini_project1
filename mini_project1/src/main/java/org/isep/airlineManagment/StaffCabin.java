@@ -2,7 +2,7 @@ package org.isep.airlineManagment;
 
 import java.util.Date;
 
-public class StaffCabin extends Employee{
+public class StaffCabin extends Employee {
 
     private String qualification;
 
@@ -11,9 +11,9 @@ public class StaffCabin extends Employee{
         this.qualification = qualification;
     }
 
-    public void assignFlight(){
+    public void assignFlight() {
     }
 
-    public void getFlight(){
+    public void getFlight() {
     }
 }

@@ -8,7 +8,7 @@ public class Person {
     protected String address;
     protected String contact;
 
-    public Person(String name, String address, String contact){
+    public Person(String name, String address, String contact) {
         Random random = new Random();
         this.id = random.nextInt(999999);
         this.name = name;
@@ -16,7 +16,7 @@ public class Person {
         this.contact = contact;
     }
 
-    public void getInfos(){
+    public void getInfos() {
         System.out.println("Name : "+ name);
         System.out.println("ID : "+ id);
         System.out.println("Address : "+ address);

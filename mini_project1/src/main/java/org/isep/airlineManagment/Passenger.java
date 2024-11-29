@@ -1,6 +1,6 @@
 package org.isep.airlineManagment;
 
-public class Passenger extends Person{
+public class Passenger extends Person {
 
     private String passport;
     protected Book reservationNumber;
@@ -10,15 +10,15 @@ public class Passenger extends Person{
         this.passport = passport;
     }
 
-    public void bookFlight(){
+    public void bookFlight() {
 
     }
 
-    public void cancelFlight(Book reservationNumber){
+    public void cancelFlight(Book reservationNumber) {
 
     }
 
-    public void getReservations(Book reservationNumber){
+    public void getReservations(Book reservationNumber) {
 
     }
 }
