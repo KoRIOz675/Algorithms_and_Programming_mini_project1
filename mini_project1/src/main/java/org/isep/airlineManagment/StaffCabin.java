@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class StaffCabin extends Employee{
 
-    String qualification;
+    private String qualification;
 
     public StaffCabin(String name, String address, String contact, int numberEmployee, Date hiringDate, String qualification) {
         super(name, address, contact, numberEmployee, hiringDate);

@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class AirlinePilot extends Employee{
 
-    String licence;
-    int flightHours;
+    private String licence;
+    private int flightHours;
 
     public AirlinePilot(String name, String address, String contact, int numberEmployee, Date hiringDate, String licence, int flightHours) {
         super(name, address, contact, numberEmployee, hiringDate);

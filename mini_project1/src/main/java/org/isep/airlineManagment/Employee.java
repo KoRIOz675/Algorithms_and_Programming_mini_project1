@@ -3,8 +3,8 @@ package org.isep.airlineManagment;
 import java.util.Date;
 
 public class Employee extends Person {
-    int numberEmployee;
-    Date hiringDate;
+    protected int numberEmployee;
+    protected Date hiringDate;
 
     public Employee(String name, String address, String contact, int numberEmployee, Date hiringDate) {
         super(name, address, contact);

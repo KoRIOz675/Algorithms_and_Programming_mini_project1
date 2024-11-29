@@ -2,8 +2,8 @@ package org.isep.airlineManagment;
 
 public class Passenger extends Person{
 
-    String passport;
-    Book reservationNumber;
+    private String passport;
+    protected Book reservationNumber;
 
     public Passenger(String name, String address, String contact, String passport) {
         super(name, address, contact);
