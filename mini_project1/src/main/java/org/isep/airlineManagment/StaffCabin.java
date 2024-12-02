@@ -16,7 +16,13 @@ public abstract class StaffCabin extends Employee {
     }
 
 
-    public void getFlight() {
+    public void getFlight(Flight flight) {
+        System.out.println("Flight Number : "+ flight.getFlightNumber() +
+                "\nOrigin : "+ flight.getOrigin() +
+                "\nDestination : "+ flight.getdestination() +
+                "\nDeparture time : "+ flight.getDepartureTime() +
+                "\n Arrival time : "+ flight.getArrivalDateTime() +
+                "\nStatus : "+ flight.getStatus());
     }
 
 
