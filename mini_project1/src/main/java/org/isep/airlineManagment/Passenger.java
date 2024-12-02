@@ -5,17 +5,16 @@ import java.util.List;
 
 public abstract class Passenger extends Person {
     private String passport;
-    private List<Book> books;
 
 
-    public Passenger(int id, String name, String address, String contact, String passport, List<Book> books) {
+    public Passenger(int id, String name, String address, String contact, String passport) {
         super(id, name, address, contact);
         this.passport = passport;
-        this.books = new ArrayList<>();
     }
 
 
-    public void bookFlight() {
+    public void bookFlight(Flight flight) {
+        
     }
 
 
@@ -43,17 +42,7 @@ public abstract class Passenger extends Person {
     }
 
 
-    public List<Book> getBook() {
-        return this.books;
-    }
-
-
     public void setPassport(String passport) {
         this.passport = passport;
-    }
-
-
-    public void setBook(List<Book> book) {
-        this.books = book;
     }
 }
