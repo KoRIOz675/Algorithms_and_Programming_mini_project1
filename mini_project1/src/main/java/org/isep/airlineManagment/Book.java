@@ -1,11 +1,14 @@
 package org.isep.airlineManagment;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Book {
     private int reservationNumber;
     private LocalDateTime reservationDate;
     private String status;
+    private HashMap<Passenger, ArrayList<Flight>> reservations;
 
 
     public Book(int reservationNumber, LocalDateTime reservationDate, String status) {
@@ -13,6 +16,9 @@ public class Book {
         this.reservationDate = reservationDate;
         this.status = status;
     }
+
+
+
 
 
     public int getReservationNumber() {
