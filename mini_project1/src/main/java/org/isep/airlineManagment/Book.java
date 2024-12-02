@@ -17,6 +17,20 @@ public class Book {
         this.status = status;
     }
 
+
+    public void addBook(Passenger passenger, Flight flight) {
+        if (reservations.containsKey(passenger)) {
+            ArrayList<Flight> l = reservations.get(passenger);
+            l.add(flight);
+            reservations.put(passenger, l);
+        } else {
+            ArrayList<Flight> l = new ArrayList<Flight>();
+            l.add(flight);
+            reservations.put(passenger, l);
+        }
+    }
+
+
     public int getReservationNumber() {
         return this.reservationNumber;
     }
