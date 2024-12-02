@@ -21,6 +21,33 @@ public class Flight {
     }
 
 
+    public Boolean planFlight(Aircraft aircraft) {
+        return aircraft.assignFlight(this);
+    }
+
+
+    public void cancelFlight(Aircraft aircraft) {
+        aircraft.cancelFlight(departureTime);
+    }
+
+
+    public Boolean modifyFlight(Aircraft aircraft, LocalDateTime newDepartureTime, LocalDateTime newArrivalTime) {
+        this.cancelFlight(aircraft);
+        LocalDateTime dep = this.departureTime;
+        LocalDateTime arv = this.arrivalDateTime;
+        this.departureTime = newDepartureTime;
+        this.arrivalDateTime = newArrivalTime;
+        Boolean hasWorked = planFlight(aircraft);
+        if (hasWorked) {
+            return true;
+        }
+        this.departureTime = dep;
+        this.arrivalDateTime = arv;
+        planFlight(aircraft);
+        return false;
+    }
+
+
     public int getFlightNumber() {
         return this.flightNumber;
     }

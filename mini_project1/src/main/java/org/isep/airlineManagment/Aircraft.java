@@ -59,6 +59,16 @@ public class Aircraft {
     }
 
 
+    public HashMap<LocalDateTime, LocalDateTime> getTimetable() {
+        return this.timeTable;
+    }
+
+
+    public void cancelFlight(LocalDateTime departure) {
+        this.timeTable.remove(departure);
+    }
+
+
     public void setRegistration(String registration) {
         this.registration = registration;
     }
