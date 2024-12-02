@@ -2,7 +2,7 @@ package org.isep.airlineManagment;
 
 import java.time.LocalDateTime;
 
-public class StaffCabin extends Employee {
+public abstract class StaffCabin extends Employee {
     private String qualification;
 
 
@@ -17,6 +17,18 @@ public class StaffCabin extends Employee {
 
 
     public void getFlight() {
+    }
+
+
+    @Override
+    public void getInfos() {
+        {
+            System.out.println("Name : "+ this.name);
+            System.out.println("ID : "+ this.id);
+            System.out.println("Address : "+ this.address);
+            System.out.println("Contact : "+ this.contact);
+            System.out.println("Qualification : "+ this.qualification);
+        }
     }
 
 

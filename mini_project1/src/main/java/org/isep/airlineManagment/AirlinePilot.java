@@ -2,7 +2,7 @@ package org.isep.airlineManagment;
 
 import java.time.LocalDateTime;
 
-public class AirlinePilot extends Employee {
+public abstract class AirlinePilot extends Employee {
 
     private String licence;
     private int flightHours;
@@ -19,6 +19,19 @@ public class AirlinePilot extends Employee {
 
 
     public void getFlight() {
+    }
+
+
+    @Override
+    public void getInfos() {
+        {
+            System.out.println("Name : "+ this.name);
+            System.out.println("ID : "+ this.id);
+            System.out.println("Address : "+ this.address);
+            System.out.println("Contact : "+ this.contact);
+            System.out.println("Licence : "+ this.licence);
+            System.out.println("Total flight hours : "+ this.flightHours);
+        }
     }
 
 

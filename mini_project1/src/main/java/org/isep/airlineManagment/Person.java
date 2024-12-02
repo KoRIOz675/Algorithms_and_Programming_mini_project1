@@ -1,6 +1,6 @@
 package org.isep.airlineManagment;
 
-public class Person {
+public abstract class Person {
     protected int id;
     protected String name;
     protected String address;
@@ -15,12 +15,7 @@ public class Person {
     }
 
 
-    public void getInfos() {
-        System.out.println("Name : "+ this.name);
-        System.out.println("ID : "+ this.id);
-        System.out.println("Address : "+ this.address);
-        System.out.println("Contact : "+ this.contact);
-    }
+    public abstract void getInfos();
 
 
     public int getId() {

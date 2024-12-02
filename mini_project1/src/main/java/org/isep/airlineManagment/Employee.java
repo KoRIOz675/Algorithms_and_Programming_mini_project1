@@ -2,7 +2,7 @@ package org.isep.airlineManagment;
 
 import java.time.LocalDateTime;
 
-public class Employee extends Person {
+public abstract class Employee extends Person {
     protected int numberEmployee;
     protected LocalDateTime hiringDate;
 

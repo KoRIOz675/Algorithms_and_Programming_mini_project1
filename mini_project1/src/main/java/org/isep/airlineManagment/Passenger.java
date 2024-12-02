@@ -1,6 +1,8 @@
 package org.isep.airlineManagment;
 
-public class Passenger extends Person {
+import java.sql.SQLOutput;
+
+public abstract class Passenger extends Person {
     private String passport;
 
 
@@ -22,6 +24,18 @@ public class Passenger extends Person {
 
     public void getReservations(int id) {
 
+    }
+
+
+    @Override
+    public void getInfos() {
+        {
+            System.out.println("Name : "+ this.name);
+            System.out.println("ID : "+ this.id);
+            System.out.println("Address : "+ this.address);
+            System.out.println("Contact : "+ this.contact);
+            System.out.println("Passport : "+ this.passport);
+        }
     }
 
 
