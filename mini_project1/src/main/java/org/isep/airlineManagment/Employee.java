@@ -19,8 +19,6 @@ public class Employee extends Person {
         switch (temp) {
             case "1" :
                 return "Role : Pilot";
-            case "2" :
-                return "Role : Staff Cabin";
             default:
                 return "Role : Crew";
         }

@@ -6,8 +6,8 @@ public class StaffCabin extends Employee {
     private String qualification;
 
 
-    public StaffCabin(String name, String address, String contact, int numberEmployee, LocalDateTime hiringDate, String qualification) {
-        super(name, address, contact, numberEmployee, hiringDate);
+    public StaffCabin(int id, String name, String address, String contact, int numberEmployee, LocalDateTime hiringDate, String qualification) {
+        super(id, name, address, contact, numberEmployee, hiringDate);
         this.qualification = qualification;
     }
 

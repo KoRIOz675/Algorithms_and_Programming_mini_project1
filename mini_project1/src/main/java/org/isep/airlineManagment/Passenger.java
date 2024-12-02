@@ -4,8 +4,8 @@ public class Passenger extends Person {
     private String passport;
 
 
-    public Passenger(String name, String address, String contact, String passport) {
-        super(name, address, contact);
+    public Passenger(int id, String name, String address, String contact, String passport) {
+        super(id, name, address, contact);
         this.passport = passport;
     }
 

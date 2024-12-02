@@ -7,15 +7,37 @@ public class AirlinePilot extends Employee {
     private String licence;
     private int flightHours;
 
-    public AirlinePilot(String name, String address, String contact, int numberEmployee, LocalDateTime hiringDate, String licence, int flightHours) {
-        super(name, address, contact, numberEmployee, hiringDate);
+    public AirlinePilot(int id, String name, String address, String contact, int numberEmployee, LocalDateTime hiringDate, String licence, int flightHours) {
+        super(id, name, address, contact, numberEmployee, hiringDate);
         this.flightHours = flightHours;
         this.licence = licence;
     }
 
+
     public void assignFlight() {
     }
 
+
     public void getFlight() {
+    }
+
+
+    public String getLicence() {
+        return this.licence;
+    }
+
+
+    public int getFlightHours() {
+        return this.flightHours;
+    }
+
+
+    public void setLicence(String licence) {
+        this.licence = licence;
+    }
+
+
+    public void setFlightHours(int flightHours) {
+        this.flightHours = flightHours;
     }
 }
