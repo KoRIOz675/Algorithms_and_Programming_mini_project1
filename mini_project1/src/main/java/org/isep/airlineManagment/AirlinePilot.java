@@ -18,19 +18,24 @@ public abstract class AirlinePilot extends Employee {
     }
 
 
-    public void getFlight() {
+    public void getFlight(Flight flight) {
+        System.out.println("Flight Number : "+ flight.getFlightNumber() +
+                "\nOrigin : "+ flight.getOrigin() +
+                "\nDestination : "+ flight.getdestination() +
+                "\nDeparture time : "+ flight.getDepartureTime() +
+                "\n Arrival time : "+ flight.getArrivalDateTime() +
+                "\nStatus : "+ flight.getStatus());
     }
 
 
-    @Override
     public void getInfos() {
         {
-            System.out.println("Name : "+ this.name);
-            System.out.println("ID : "+ this.id);
-            System.out.println("Address : "+ this.address);
-            System.out.println("Contact : "+ this.contact);
-            System.out.println("Licence : "+ this.licence);
-            System.out.println("Total flight hours : "+ this.flightHours);
+            System.out.println("Name : "+ this.name +
+                    "\nID : "+ this.id +
+                    "\nAddress : "+ this.address +
+                    "\nContact : "+ this.contact +
+                    "\nLicence : "+ this.licence +
+                    "\nTotal flight hours : "+ this.flightHours);
         }
     }
 

@@ -20,14 +20,13 @@ public abstract class StaffCabin extends Employee {
     }
 
 
-    @Override
     public void getInfos() {
         {
-            System.out.println("Name : "+ this.name);
-            System.out.println("ID : "+ this.id);
-            System.out.println("Address : "+ this.address);
-            System.out.println("Contact : "+ this.contact);
-            System.out.println("Qualification : "+ this.qualification);
+            System.out.println("Name : "+ this.name +
+                    "\nID : "+ this.id +
+                    "\nAddress : "+ this.address +
+                    "\nContact : "+ this.contact +
+                    "\nQualification : "+ this.qualification);
         }
     }
 

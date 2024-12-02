@@ -27,14 +27,13 @@ public abstract class Passenger extends Person {
     }
 
 
-    @Override
     public void getInfos() {
         {
-            System.out.println("Name : "+ this.name);
-            System.out.println("ID : "+ this.id);
-            System.out.println("Address : "+ this.address);
-            System.out.println("Contact : "+ this.contact);
-            System.out.println("Passport : "+ this.passport);
+            System.out.println("Name : "+ this.name +
+                    "\nID : "+ this.id +
+                    "\nAddress : "+ this.address +
+                    "\nContact : "+ this.contact +
+                    "\nPassport : "+ this.passport);
         }
     }
 
