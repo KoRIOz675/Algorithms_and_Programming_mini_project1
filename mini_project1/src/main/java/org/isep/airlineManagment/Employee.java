@@ -7,15 +7,23 @@ public class Employee extends Person {
     protected LocalDateTime hiringDate;
 
 
-    public Employee(String name, String address, String contact, int numberEmployee, LocalDateTime hiringDate) {
-        super(name, address, contact);
+    public Employee(int id, String name, String address, String contact, int numberEmployee, LocalDateTime hiringDate) {
+        super(id, name, address, contact);
         this.hiringDate = hiringDate;
         this.numberEmployee = numberEmployee;
     }
 
 
     public String getRole() {
-        return "role";
+        String temp = String.valueOf(String.valueOf(this.id).charAt(0));
+        switch (temp) {
+            case "1" :
+                return "Role : Pilot";
+            case "2" :
+                return "Role : Staff Cabin";
+            default:
+                return "Role : Crew";
+        }
     }
 
 

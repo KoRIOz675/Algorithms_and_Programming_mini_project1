@@ -1,7 +1,5 @@
 package org.isep.airlineManagment;
 
-import java.util.Random;
-
 public class Person {
     protected int id;
     protected String name;
@@ -9,9 +7,8 @@ public class Person {
     protected String contact;
 
 
-    public Person(String name, String address, String contact) {
-        Random random = new Random();
-        this.id = random.nextInt(999999);
+    public Person(int id, String name, String address, String contact) {
+        this.id = id;
         this.name = name;
         this.address = address;
         this.contact = contact;
@@ -19,10 +16,10 @@ public class Person {
 
 
     public void getInfos() {
-        System.out.println("Name : "+ name);
-        System.out.println("ID : "+ id);
-        System.out.println("Address : "+ address);
-        System.out.println("Contact : "+ contact);
+        System.out.println("Name : "+ this.name);
+        System.out.println("ID : "+ this.id);
+        System.out.println("Address : "+ this.address);
+        System.out.println("Contact : "+ this.contact);
     }
 
 
