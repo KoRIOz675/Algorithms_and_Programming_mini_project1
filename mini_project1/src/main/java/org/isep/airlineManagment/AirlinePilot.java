@@ -28,11 +28,13 @@ public class AirlinePilot extends Employee {
 
     public Boolean checkAvailability(LocalDateTime departureTime, LocalDateTime arrivalTime) {
         for (LocalDateTime departureDate : this.timeTable.keySet()) {
+            // Checking if the flight finishes during another already assigned flight
             if (departureTime.isAfter(departureDate)) {
                 if (departureTime.isBefore(this.timeTable.get(departureDate))) {
                     return false;
                 }
             };
+            // Checking if the flight starts during another already assigned flight
             if (arrivalTime.isBefore(this.timeTable.get(departureDate))) {
                 if (arrivalTime.isAfter(departureDate)) {
                     return false;

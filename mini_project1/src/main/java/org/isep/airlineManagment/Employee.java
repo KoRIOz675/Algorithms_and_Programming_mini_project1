@@ -15,6 +15,7 @@ public abstract class Employee extends Person {
 
 
     public String getRole() {
+        // Determines the role of the employee based of the first number of the id (1 for pilot and 2 for crew)
         String temp = String.valueOf(String.valueOf(this.id).charAt(0));
         switch (temp) {
             case "1" :
