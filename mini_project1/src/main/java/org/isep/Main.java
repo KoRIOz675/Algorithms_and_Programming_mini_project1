@@ -45,7 +45,5 @@ public class Main {
         System.out.println(boeing747.assignFlight(flight4));
         System.out.println(boeing747.assignFlight(flight5));
         System.out.println(airbusA380.assignFlight(flight6));
-
-
     }
 }

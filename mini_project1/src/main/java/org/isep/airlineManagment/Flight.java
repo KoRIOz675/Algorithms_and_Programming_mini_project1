@@ -32,15 +32,18 @@ public class Flight {
 
 
     public Boolean modifyFlight(Aircraft aircraft, LocalDateTime newDepartureTime, LocalDateTime newArrivalTime) {
+        // Canceling the previously recorded flight
         this.cancelFlight(aircraft);
         LocalDateTime dep = this.departureTime;
         LocalDateTime arv = this.arrivalDateTime;
         this.departureTime = newDepartureTime;
         this.arrivalDateTime = newArrivalTime;
+        // Replanning it under the new dates
         Boolean hasWorked = planFlight(aircraft);
         if (hasWorked) {
             return true;
         }
+        // Rolling back to the previous one if unavailable
         this.departureTime = dep;
         this.arrivalDateTime = arv;
         planFlight(aircraft);
