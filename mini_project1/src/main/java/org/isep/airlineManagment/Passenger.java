@@ -16,13 +16,13 @@ public class Passenger extends Person {
     }
 
 
-    public void cancelFlight(Flight flight, Book reservation) {
-        reservation.removeBook(this,flight);
+    public void cancelFlight(Flight flight) {
+        Book.removeBook(this,flight);
     }
 
 
-    public void getReservations(Book reservation) {
-        reservation.getBooks();
+    public void getReservations() {
+        Book.getBooks();
     }
 
 

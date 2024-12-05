@@ -1,6 +1,7 @@
 package org.isep.airlineManagment;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -10,6 +11,7 @@ public class Book {
     private LocalDateTime reservationDate;
     private String status;
     public static HashMap<Passenger, ArrayList<Flight>> reservations;
+    public static DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 
 
     public Book(int reservationNumber, LocalDateTime reservationDate, String status) {
@@ -37,8 +39,17 @@ public class Book {
 
     public static void getBooks() {
         System.out.println("List of all flights");
+        ArrayList<Flight> f;
+        Passenger p;
+        String s;
         for (Map.Entry m : reservations.entrySet()) {
-            System.out.println(m.getValue());
+            s = "\t";
+            p = (Passenger) m.getKey();
+            f = (ArrayList<Flight>) m.getValue();
+            for (Flight flight : f) {
+                s += "-ID Number : "+ flight.getFlightNumber() + ", origin : " + flight.getOrigin().getName() + ", destination : "+ flight.getdestination().getName() + ", Departure time : " + flight.getDepartureTime().format(timeFormatter) + ", Arrival time : " + flight.getArrivalDateTime().format(timeFormatter) + "\n\t";
+            }
+            System.out.print(p.getName() +" :\n"+ s);
         }
     }
 
