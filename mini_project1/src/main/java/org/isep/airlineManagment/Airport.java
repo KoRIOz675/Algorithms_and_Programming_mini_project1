@@ -10,6 +10,7 @@ public class Airport {
         this.name = name;
         this.city = city;
         this.description = description;
+        System.out.println(this.name);
     }
 
 
