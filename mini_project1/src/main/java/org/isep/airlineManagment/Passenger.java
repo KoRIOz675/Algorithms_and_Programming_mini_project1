@@ -11,8 +11,8 @@ public class Passenger extends Person {
     }
 
 
-    public void bookFlight(Flight flight, Book reservation) {
-        reservation.addBook(this, flight);
+    public void bookFlight(Flight flight) {
+        Book.addBook(this, flight);
     }
 
 

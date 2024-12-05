@@ -9,7 +9,7 @@ public class Book {
     private int reservationNumber;
     private LocalDateTime reservationDate;
     private String status;
-    public HashMap<Passenger, ArrayList<Flight>> reservations;
+    public static HashMap<Passenger, ArrayList<Flight>> reservations;
 
 
     public Book(int reservationNumber, LocalDateTime reservationDate, String status) {
@@ -19,7 +19,7 @@ public class Book {
     }
 
 
-    public void addBook(Passenger passenger, Flight flight) {
+    public static void addBook(Passenger passenger, Flight flight) {
         if (reservations.containsKey(passenger)) {
             ArrayList<Flight> l = reservations.get(passenger);
             l.add(flight);
@@ -32,7 +32,7 @@ public class Book {
     }
 
 
-    public void getBooks() {
+    public static void getBooks() {
         System.out.println("List of all flights");
         for (Map.Entry m : reservations.entrySet()) {
             System.out.println(m.getValue());
@@ -40,7 +40,7 @@ public class Book {
     }
 
 
-    public void removeBook(Passenger passenger, Flight flight) {
+    public static void removeBook(Passenger passenger, Flight flight) {
         ArrayList<Flight> l = reservations.get(passenger);
         if (l.contains(flight)) {
             l.remove(flight);
