@@ -1,7 +1,7 @@
 package org.isep.airlineManagment;
 
 
-public abstract class Passenger extends Person {
+public class Passenger extends Person {
     private String passport;
 
 
