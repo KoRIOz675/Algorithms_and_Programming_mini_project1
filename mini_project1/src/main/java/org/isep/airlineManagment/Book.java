@@ -10,15 +10,13 @@ public class Book {
     private LocalDateTime reservationDate;
     private String status;
     public static HashMap<Passenger, ArrayList<Flight>> reservations;
-    public static boolean isReservationsNotInitialised = true;
 
 
     public Book(int reservationNumber, LocalDateTime reservationDate, String status) {
         this.reservationNumber = reservationNumber;
         this.reservationDate = reservationDate;
         this.status = status;
-        if (isReservationsNotInitialised) {
-            isReservationsNotInitialised = false;
+        if (reservations == null) {
             reservations = new HashMap<Passenger, ArrayList<Flight>>();
         }
     }
