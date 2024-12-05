@@ -1,20 +1,45 @@
 package org.isep.airlineManagment;
 
 import java.time.LocalDateTime;
+import java.util.HashMap;
 
 public class AirlinePilot extends Employee {
-
     private String licence;
     private int flightHours;
+    private HashMap<LocalDateTime, LocalDateTime> timeTable;
+
 
     public AirlinePilot(int id, String name, String address, String contact, int numberEmployee, LocalDateTime hiringDate, String licence, int flightHours) {
         super(id, name, address, contact, numberEmployee, hiringDate);
         this.flightHours = flightHours;
         this.licence = licence;
+        this.timeTable = new HashMap<LocalDateTime, LocalDateTime>();
     }
 
 
-    public void assignFlight() {
+    public boolean assignFlight(Flight newFlight) {
+        if (this.checkAvailability(newFlight.getDepartureTime(), newFlight.getArrivalDateTime())) {
+            this.timeTable.put(newFlight.getDepartureTime(), newFlight.getArrivalDateTime());
+            return true;
+        }
+        return false;
+    }
+
+
+    public Boolean checkAvailability(LocalDateTime departureTime, LocalDateTime arrivalTime) {
+        for (LocalDateTime departureDate : this.timeTable.keySet()) {
+            if (departureTime.isAfter(departureDate)) {
+                if (departureTime.isBefore(this.timeTable.get(departureDate))) {
+                    return false;
+                }
+            };
+            if (arrivalTime.isBefore(this.timeTable.get(departureDate))) {
+                if (arrivalTime.isAfter(departureDate)) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
 
