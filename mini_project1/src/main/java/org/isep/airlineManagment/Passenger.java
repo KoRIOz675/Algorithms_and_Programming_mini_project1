@@ -1,7 +1,5 @@
 package org.isep.airlineManagment;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public abstract class Passenger extends Person {
     private String passport;
@@ -13,27 +11,27 @@ public abstract class Passenger extends Person {
     }
 
 
-    public void bookFlight(Flight flight) {
-        
+    public void bookFlight(Flight flight, Book reservation) {
+        reservation.addBook(this, flight);
     }
 
 
-    public void cancelFlight() {
+    public void cancelFlight(Flight flight, Book reservation) {
+        reservation.removeBook(this,flight);
     }
 
 
-    public void getReservations() {
+    public void getReservations(Book reservation) {
+        reservation.getBooks();
     }
 
 
     public void getInfos() {
-        {
-            System.out.println("Name : "+ this.name +
-                    "\nID : "+ this.id +
-                    "\nAddress : "+ this.address +
-                    "\nContact : "+ this.contact +
-                    "\nPassport : "+ this.passport);
-        }
+        System.out.println("Name : "+ this.name +
+                "\nID : "+ this.id +
+                "\nAddress : "+ this.address +
+                "\nContact : "+ this.contact +
+                "\nPassport : "+ this.passport);
     }
 
 

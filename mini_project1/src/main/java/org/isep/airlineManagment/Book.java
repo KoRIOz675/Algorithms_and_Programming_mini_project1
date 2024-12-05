@@ -3,6 +3,7 @@ package org.isep.airlineManagment;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Book {
     private int reservationNumber;
@@ -26,6 +27,23 @@ public class Book {
         } else {
             ArrayList<Flight> l = new ArrayList<Flight>();
             l.add(flight);
+            reservations.put(passenger, l);
+        }
+    }
+
+
+    public void getBooks() {
+        System.out.println("List of all flights");
+        for (Map.Entry m : reservations.entrySet()) {
+            System.out.println(m.getValue());
+        }
+    }
+
+
+    public void removeBook(Passenger passenger, Flight flight) {
+        ArrayList<Flight> l = reservations.get(passenger);
+        if (l.contains(flight)) {
+            l.remove(flight);
             reservations.put(passenger, l);
         }
     }
