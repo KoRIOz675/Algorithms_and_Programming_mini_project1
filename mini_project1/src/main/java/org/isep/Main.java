@@ -103,7 +103,7 @@ public class Main {
 
 
         // Menu
-        Scanner scanner;
+        // Scanner scanner;
         int userChoice1;
         int userChoice2;
         int userChoice3;
@@ -124,22 +124,35 @@ public class Main {
         StaffCabin staffCabin;
         Flight flight;
         do {
+            System.out.println("");
             userChoice1 = getInt("Choose a function. Enter the corresponding number : \n0.\tQuit\n1.\tDate\n2.\tAirport\n3.\tAircraft\n4.\tPassenger\n5.\tPilot\n6.\tStaff Cabin\n7.\tFlight", 0);
             switch (userChoice1) {
                 case 0:
                     flag = false;
                     break;
                 case 1:
-                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Date\n2.\tChange an existing Date\n3.\tCreate a new Date", 0);
+                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Date\n2.\tChange an existing Date\n3.\tCreate a new Date\n4.\tView a list of all Dates", 0);
                     switch (userChoice2) {
                         case 0:
                             break;
                         case 1:
-
+                            userChoice3 = getInt("Enter the index of the date to modify", -1);
+                            System.out.println("You are modifying the following date : ");
+                            System.out.println(dates.get(userChoice3));
+                            date = LocalDateTime.of(getInt("Enter a year", 0), getInt("Enter a month", 0), getInt("Enter a day", 0), getInt("Enter a minute", 0), getInt("Enter a second", 0));
+                            dates.add(date);
                             break;
                         case 2:
+                            date = LocalDateTime.of(getInt("Enter a year", 0), getInt("Enter a month", 0), getInt("Enter a day", 0), getInt("Enter a minute", 0), getInt("Enter a second", 0));
                             break;
                         case 3:
+                            break;
+                        case 4:
+                            int i = 0;
+                            for (LocalDateTime d : dates) {
+                                System.out.println(i + " : " + d);
+                                i++;
+                            }
                             break;
                     }
                     break;
