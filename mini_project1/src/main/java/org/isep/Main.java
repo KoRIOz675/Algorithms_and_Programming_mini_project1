@@ -6,6 +6,8 @@ package org.isep;
 import org.isep.airlineManagment.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -98,5 +100,199 @@ public class Main {
         passenger1.cancelFlight(flight2);
         // Output of all the reservations
         passenger1.getReservations();
+
+
+        // Menu
+        Scanner scanner;
+        int userChoice1;
+        int userChoice2;
+        boolean flag = true;
+        ArrayList<LocalDateTime> dates = new ArrayList<LocalDateTime>();
+        ArrayList<Airport> airports = new ArrayList<Airport>();
+        ArrayList<Aircraft> aircrafts = new ArrayList<Aircraft>();
+        ArrayList<Passenger> passengers = new ArrayList<Passenger>();
+        ArrayList<AirlinePilot> pilots = new ArrayList<AirlinePilot>();
+        ArrayList<StaffCabin> staffCabins = new ArrayList<StaffCabin>();
+        ArrayList<Flight> flights = new ArrayList<Flight>();
+        LocalDateTime date;
+        Airport airport;
+        Aircraft aircraft;
+        Passenger passenger;
+        AirlinePilot pîlot;
+        StaffCabin staffCabin;
+        Flight flight;
+        do {
+            do {
+                scanner = new Scanner(System.in);
+                System.out.println("Choose a function. Enter the corresponding number : \n0.\tQuit\n1.\tDate\n2.\tAirport\n3.\tAircraft\n4.\tPassenger\n5.\tPilot\n6.\tStaff Cabin\n7.\tFlight");
+                try {
+                    userChoice1 = scanner.nextInt();
+                } catch (Exception e) {
+                    // if user entered anything else but an integer
+                    userChoice1 = -1;
+                }
+            } while (userChoice1 < 0);
+            switch (userChoice1) {
+                case 0:
+                    flag = false;
+                    break;
+                case 1:
+                    do {
+                        scanner = new Scanner(System.in);
+                        System.out.println("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Date\n2.\tChange an existing Date\n3.\tCreate a new Date");
+                        try {
+                            userChoice2 = scanner.nextInt();
+                        } catch (Exception e) {
+                            // if user entered anything else but an integer
+                            userChoice2 = -1;
+                        }
+                    } while (userChoice2 < 0);
+                    switch (userChoice2) {
+                        case 0:
+                            break;
+                        case 1:
+
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                    }
+                    break;
+                case 2:
+                    do {
+                        scanner = new Scanner(System.in);
+                        System.out.println("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Airport\n2.\tChange an existing Airport\n3.\tCreate a new Airport");
+                        try {
+                            userChoice2 = scanner.nextInt();
+                        } catch (Exception e) {
+                            // if user entered anything else but an integer
+                            userChoice2 = -1;
+                        }
+                    } while (userChoice2 < 0);
+                    switch (userChoice2) {
+                        case 0:
+                            break;
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                    }
+                    break;
+                case 3:
+                    do {
+                        scanner = new Scanner(System.in);
+                        System.out.println("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Aircraft\n2.\tChange an existing Aircraft\n3.\tCreate a new Aircraft");
+                        try {
+                            userChoice2 = scanner.nextInt();
+                        } catch (Exception e) {
+                            // if user entered anything else but an integer
+                            userChoice2 = -1;
+                        }
+                    } while (userChoice2 < 0);
+                    switch (userChoice2) {
+                        case 0:
+                            break;
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                    }
+                    break;
+                case 4:
+                    do {
+                        scanner = new Scanner(System.in);
+                        System.out.println("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Passenger\n2.\tChange an existing Passenger\n3.\tCreate a new Passenger");
+                        try {
+                            userChoice2 = scanner.nextInt();
+                        } catch (Exception e) {
+                            // if user entered anything else but an integer
+                            userChoice2 = -1;
+                        }
+                    } while (userChoice2 < 0);
+                    switch (userChoice2) {
+                        case 0:
+                            break;
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                    }
+                    break;
+                case 5:
+                    do {
+                        scanner = new Scanner(System.in);
+                        System.out.println("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Pilot\n2.\tChange an existing Pilot\n3.\tCreate a new Pilot");
+                        try {
+                            userChoice2 = scanner.nextInt();
+                        } catch (Exception e) {
+                            // if user entered anything else but an integer
+                            userChoice2 = -1;
+                        }
+                    } while (userChoice2 < 0);
+                    switch (userChoice2) {
+                        case 0:
+                            break;
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                    }
+                    break;
+                case 6:
+                    do {
+                        scanner = new Scanner(System.in);
+                        System.out.println("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Staff Cabin\n2.\tChange an existing Staff Cabin\n3.\tCreate a new Staff Cabin");
+                        try {
+                            userChoice2 = scanner.nextInt();
+                        } catch (Exception e) {
+                            // if user entered anything else but an integer
+                            userChoice2 = -1;
+                        }
+                    } while (userChoice2 < 0);
+                    switch (userChoice2) {
+                        case 0:
+                            break;
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                    }
+                    break;
+                case 7:
+                    do {
+                        scanner = new Scanner(System.in);
+                        System.out.println("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Flight\n2.\tChange an existing Flight\n3.\tCreate a new Flight");
+                        try {
+                            userChoice2 = scanner.nextInt();
+                        } catch (Exception e) {
+                            // if user entered anything else but an integer
+                            userChoice2 = -1;
+                        }
+                    } while (userChoice2 < 0);
+                    switch (userChoice2) {
+                        case 0:
+                            break;
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                    }
+                    break;
+            }
+        } while (flag);
+        scanner.close();
     }
 }
