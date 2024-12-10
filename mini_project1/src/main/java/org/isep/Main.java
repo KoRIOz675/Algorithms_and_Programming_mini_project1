@@ -226,7 +226,6 @@ public class Main {
     }
 
 
-
     public static int getInt(String message, int threshold) {
         Scanner scanner;
         int userChoice;
