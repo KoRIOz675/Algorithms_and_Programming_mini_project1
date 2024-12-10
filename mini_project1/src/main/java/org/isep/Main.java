@@ -34,14 +34,14 @@ public class Main {
         Passenger passenger3 = new Passenger(3000003, "Seb", "28 rue Notre-Dame-des-Champs, 75006 Paris", "+33101010101", "FR78CCCCCC");
 
         // Creation of 3 pilots
-        AirlinePilot pilot1 = new AirlinePilot(1000001,"Florian","16 Rue d'Antrain, 35000 Rennes","mail",1,"LocalDateTime.now()","I can fly, trust me",500);
-        AirlinePilot pilot2 = new AirlinePilot(1000002,"Steve","adress1","mail2",2,"LocalDateTime.now()","What does this button do ?",200);
-        AirlinePilot pilot3 = new AirlinePilot(1000003,"Marilou","adress2","mail3",3,"LocalDateTime.now()","I afraid of heights",1000);
+        AirlinePilot pilot1 = new AirlinePilot(1000001,"Florian","16 Rue d'Antrain, 35000 Rennes","mail",1,"I can fly, trust me",500,LocalDateTime.now());
+        AirlinePilot pilot2 = new AirlinePilot(1000002,"Steve","adress1","mail2",2,"What does this button do ?",200,LocalDateTime.now());
+        AirlinePilot pilot3 = new AirlinePilot(1000003,"Marilou","adress2","mail3",3,"I afraid of heights",1000,LocalDateTime.now());
 
         // Creation of 3 crew members
-        StaffCabin crew1 = new StaffCabin(2000001,"Alex","adress3","contact",4,"LocalDateTime.now()","Trust me");
-        StaffCabin crew2 = new StaffCabin(2000002,"George","address4","contact2",5,"LocalDateTime.now()","I'm an engineer");
-        StaffCabin crew3 = new StaffCabin(2000004,"Ilno","address5","contact3",6,"LocalDateTime.now()","I think that this should go right here");
+        StaffCabin crew1 = new StaffCabin(2000001,"Alex","adress3","contact",4,"Trust me",LocalDateTime.now());
+        StaffCabin crew2 = new StaffCabin(2000002,"George","address4","contact2",5,"I'm an engineer",LocalDateTime.now());
+        StaffCabin crew3 = new StaffCabin(2000004,"Ilno","address5","contact3",6,"I think that this should go right here",LocalDateTime.now());
 
         // Creation of the flights
         // flight1 flies from 05/12/2024 to 05/12/2026

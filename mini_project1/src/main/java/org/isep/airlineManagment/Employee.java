@@ -4,10 +4,10 @@ import java.time.LocalDateTime;
 
 public abstract class Employee extends Person {
     protected int numberEmployee;
-    protected String hiringDate;
+    protected LocalDateTime hiringDate;
 
 
-    public Employee(int id, String name, String address, String contact, int numberEmployee, String hiringDate) {
+    public Employee(int id, String name, String address, String contact, int numberEmployee, LocalDateTime hiringDate) {
         super(id, name, address, contact);
         this.hiringDate = hiringDate;
         this.numberEmployee = numberEmployee;
@@ -31,7 +31,7 @@ public abstract class Employee extends Person {
     }
 
 
-    public String getHiringDate() {
+    public LocalDateTime getHiringDate() {
         return this.hiringDate;
     }
 
@@ -41,7 +41,7 @@ public abstract class Employee extends Person {
     }
 
 
-    public void setHiringDate(String hiringDate) {
+    public void setHiringDate(LocalDateTime hiringDate) {
         this.hiringDate = hiringDate;
     }
 }

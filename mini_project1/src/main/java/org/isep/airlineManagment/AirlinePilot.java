@@ -9,7 +9,7 @@ public class AirlinePilot extends Employee {
     private HashMap<LocalDateTime, LocalDateTime> timeTable;
 
 
-    public AirlinePilot(int id, String name, String address, String contact, int numberEmployee, String hiringDate, String licence, int flightHours) {
+    public AirlinePilot(int id, String name, String address, String contact, int numberEmployee, String licence, int flightHours, LocalDateTime hiringDate) {
         super(id, name, address, contact, numberEmployee, hiringDate);
         this.flightHours = flightHours;
         this.licence = licence;
