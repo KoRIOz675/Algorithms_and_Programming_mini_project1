@@ -8,7 +8,7 @@ public class StaffCabin extends Employee {
     private HashMap<LocalDateTime, LocalDateTime> timeTable;
 
 
-    public StaffCabin(int id, String name, String address, String contact, int numberEmployee, LocalDateTime hiringDate, String qualification) {
+    public StaffCabin(int id, String name, String address, String contact, int numberEmployee, String hiringDate, String qualification) {
         super(id, name, address, contact, numberEmployee, hiringDate);
         this.qualification = qualification;
         this.timeTable = new HashMap<LocalDateTime, LocalDateTime>();
@@ -59,7 +59,8 @@ public class StaffCabin extends Employee {
                     "\nID : "+ this.id +
                     "\nAddress : "+ this.address +
                     "\nContact : "+ this.contact +
-                    "\nQualification : "+ this.qualification);
+                    "\nQualification : "+ this.qualification +
+                    "\nHiring Date : "+ this.hiringDate);
         }
     }
 
