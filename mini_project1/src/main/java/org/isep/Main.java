@@ -189,7 +189,7 @@ public class Main {
                             System.out.println("");
                             userChoice3 = getInt("Enter the index of the airport to modify", -1);
                             System.out.println("You are modifying the following airport : ");
-                            System.out.println(dates.get(userChoice3));
+                            System.out.println(airports.get(userChoice3));
                             airport = new Airport(getString("Enter a name"), getString("Enter a city"), getString("Enter a description"));
                             airports.set(userChoice3, airport);
                             break;
