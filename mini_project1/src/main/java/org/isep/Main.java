@@ -131,11 +131,13 @@ public class Main {
                     flag = false;
                     break;
                 case 1:
+                    System.out.println("");
                     userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Date\n2.\tChange an existing Date\n3.\tCreate a new Date\n4.\tView a list of all Dates", 0);
                     switch (userChoice2) {
                         case 0:
                             break;
                         case 1:
+                            System.out.println("");
                             userChoice3 = getInt("Enter the index of the date to modify", -1);
                             System.out.println("You are modifying the following date : ");
                             System.out.println(dates.get(userChoice3));
@@ -157,6 +159,7 @@ public class Main {
                     }
                     break;
                 case 2:
+                    System.out.println("");
                     userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Airport\n2.\tChange an existing Airport\n3.\tCreate a new Airport", 0);
                     switch (userChoice2) {
                         case 0:
@@ -170,6 +173,7 @@ public class Main {
                     }
                     break;
                 case 3:
+                    System.out.println("");
                     userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Aircraft\n2.\tChange an existing Aircraft\n3.\tCreate a new Aircraft", 0);
                     switch (userChoice2) {
                         case 0:
@@ -183,6 +187,7 @@ public class Main {
                     }
                     break;
                 case 4:
+                    System.out.println("");
                     userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Passenger\n2.\tChange an existing Passenger\n3.\tCreate a new Passenger", 0);
                     switch (userChoice2) {
                         case 0:
@@ -196,6 +201,7 @@ public class Main {
                     }
                     break;
                 case 5:
+                    System.out.println("");
                     userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Pilot\n2.\tChange an existing Pilot\n3.\tCreate a new Pilot", 0);
                     switch (userChoice2) {
                         case 0:
@@ -209,6 +215,7 @@ public class Main {
                     }
                     break;
                 case 6:
+                    System.out.println("");
                     userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Staff Cabin\n2.\tChange an existing Staff Cabin\n3.\tCreate a new Staff Cabin", 0);
                     switch (userChoice2) {
                         case 0:
@@ -222,6 +229,7 @@ public class Main {
                     }
                     break;
                 case 7:
+                    System.out.println("");
                     userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Flight\n2.\tChange an existing Flight\n3.\tCreate a new Flight", 0);
                     switch (userChoice2) {
                         case 0:
