@@ -45,7 +45,7 @@ public class Airport {
 
     @Override
     public String toString() {
-        return "Airport IAIT : "+ this.name +
+        return "Airport IATA : "+ this.name +
                 ", Airport City ID :"+ this.city +
                 ", Airport Description : "+ this.description;
     }

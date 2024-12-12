@@ -1,30 +1,30 @@
-2000001;crew1;address1;mail1;1;January 25, 2010;qualification1
-2000002;crew2;address2;mail2;2;November 15, 2009;qualification2
-2000003;crew3;address3;mail3;3;October 31, 2004;qualification3
-2000004;crew4;address4;mail4;4;September 9, 2001;qualification4
-2000005;crew5;address5;mail5;5;November 15, 2005;qualification5
-2000006;crew6;address6;mail6;6;January 25, 2011;qualification6
-2000007;crew7;address7;mail7;7;November 15, 2010;qualification7
-2000008;crew8;address8;mail8;8;October 31, 2005;qualification8
-2000009;crew9;address9;mail9;9;September 9, 2002;qualification9
-2000010;crew10;address10;mail10;10;November 15, 2006;qualification10
-2000011;crew11;address11;mail11;11;January 25, 2012;qualification11
-2000012;crew12;address12;mail12;12;November 15, 2011;qualification12
-2000013;crew13;address13;mail13;13;October 31, 2006;qualification13
-2000014;crew14;address14;mail14;14;September 9, 2003;qualification14
-2000015;crew15;address15;mail15;15;November 15, 2007;qualification15
-2000016;crew16;address16;mail16;16;January 25, 2007;qualification16
-2000017;crew17;address17;mail17;17;November 15, 2012;qualification17
-2000018;crew18;address18;mail18;18;October 31, 2007;qualification18
-2000019;crew19;address19;mail19;19;September 9, 2004;qualification19
-2000020;crew20;address20;mail20;20;November 15, 2008;qualification20
-2000021;crew21;address21;mail21;21;January 25, 2010;qualification21
-2000022;crew22;address22;mail22;22;November 15, 2009;qualification22
-2000023;crew23;address23;mail23;23;October 31, 2008;qualification23
-2000024;crew24;address24;mail24;24;September 9, 2005;qualification24
-2000025;crew25;address25;mail25;25;November 15, 2009;qualification25
-2000026;crew26;address26;mail26;26;January 25, 2007;qualification26
-2000027;crew27;address27;mail27;27;November 15, 2008;qualification27
-2000028;crew28;address28;mail28;28;October 31, 2009;qualification28
-2000029;crew29;address29;mail29;29;September 9, 2006;qualification29
-2000030;crew30;address30;mail30;30;November 15, 2010;qualification30
+2000001;crew1;address1;mail1;1;qualification1;2010;1;25
+2000002;crew2;address2;mail2;2;qualification2;2009;11;15
+2000003;crew3;address3;mail3;3;qualification3;2004;10;31
+2000004;crew4;address4;mail4;4;qualification4;2005;9;11
+2000005;crew5;address5;mail5;5;qualification5;2005;11;15
+2000006;crew6;address6;mail6;6;qualification6;2011;1;20
+2000007;crew7;address7;mail7;7;qualification7;2010;10;15
+2000008;crew8;address8;mail8;8;qualification8;2005;9;30
+2000009;crew9;address9;mail9;9;qualification9;2020;9;11
+2000010;crew10;address10;mail10;10;qualification10;2006;11;15
+2000011;crew11;address11;mail11;11;qualification11;2012;1;5
+2000012;crew12;address12;mail12;12;qualification12;2011;2;3
+2000013;crew13;address13;mail13;13;qualification13;2006;5;4
+2000014;crew14;address14;mail14;14;qualification14;2003;9;8
+2000015;crew15;address15;mail15;15;qualification15;2007;5;15
+2000016;crew16;address16;mail16;16;qualification16;2007;7;8
+2000017;crew17;address17;mail17;17;qualification17;2012;1;9
+2000018;crew18;address18;mail18;18;qualification18;2007;10;17
+2000019;crew19;address19;mail19;19;qualification19;2004;6;3
+2000020;crew20;address20;mail20;20;qualification20;2008;4;15
+2000021;crew21;address21;mail21;21;qualification21;2008;5;5
+2000022;crew22;address22;mail22;22;qualification22;2004;8;12
+2000023;crew23;address23;mail23;23;qualification23;2012;9;8
+2000024;crew24;address24;mail24;24;qualification24;2005;4;30
+2000025;crew25;address25;mail25;25;qualification25;2006;12;25
+2000026;crew26;address26;mail26;26;qualification26;2000;11;4
+2000027;crew27;address27;mail27;27;qualification27;2010;8;15
+2000028;crew28;address28;mail28;28;qualification28;2009;4;27
+2000029;crew29;address29;mail29;29;qualification29;2008;6;20
+2000030;crew30;address30;mail30;30;qualification30;2007;7;19

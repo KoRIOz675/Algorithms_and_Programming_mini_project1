@@ -114,8 +114,8 @@ public class Flight {
     @Override
     public String toString() {
         return "Flight Number : "+ this.flightNumber +
-                ", Origin : "+ this.origin +
-                ", Destination : "+ this.destination +
+                ", Origin : "+ this.origin.getName() +
+                ", Destination : "+ this.destination.getName() +
                 ", Departure time : "+ this.departureTime +
                 ", Arrival time : "+ this.arrivalDateTime +
                 ", Status : "+ this.status;
