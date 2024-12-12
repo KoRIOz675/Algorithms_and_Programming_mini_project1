@@ -167,15 +167,36 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("");
-                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Airport\n2.\tChange an existing Airport\n3.\tCreate a new Airport", 0);
+                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tView a list of all Airports\n2.\tAdd a new Airport\n3.\tChange an existing Airport\n4.\tRemove an Airports", 0);
                     switch (userChoice2) {
                         case 0:
                             break;
                         case 1:
+                            int i = 0;
+                            for (Airport a : airports) {
+                                System.out.println(i + " : " + a);
+                                i++;
+                            }
+                            if (i == 0) {
+                                System.out.println("You currently have no Airports");
+                            }
                             break;
                         case 2:
+                            airport = new Airport(getString("Enter a name"), getString("Enter a city"), getString("Enter a description"));
+                            airports.add(airport);
                             break;
                         case 3:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the airport to modify", -1);
+                            System.out.println("You are modifying the following airport : ");
+                            System.out.println(dates.get(userChoice3));
+                            airport = new Airport(getString("Enter a name"), getString("Enter a city"), getString("Enter a description"));
+                            airports.set(userChoice3, airport);
+                            break;
+                        case 4:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the airport to delete", -1);
+                            airports.remove(userChoice3);
                             break;
                     }
                     break;
