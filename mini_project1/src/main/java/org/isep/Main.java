@@ -132,29 +132,36 @@ public class Main {
                     break;
                 case 1:
                     System.out.println("");
-                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Date\n2.\tChange an existing Date\n3.\tCreate a new Date\n4.\tView a list of all Dates", 0);
+                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tView a list of all Dates\n2.\tAdd a new Date\n3.\tChange an existing Date\n4.\tRemove a Date", 0);
                     switch (userChoice2) {
                         case 0:
                             break;
                         case 1:
-                            System.out.println("");
-                            userChoice3 = getInt("Enter the index of the date to modify", -1);
-                            System.out.println("You are modifying the following date : ");
-                            System.out.println(dates.get(userChoice3));
-                            date = LocalDateTime.of(getInt("Enter a year", 0), getInt("Enter a month", 0), getInt("Enter a day", 0), getInt("Enter a minute", 0), getInt("Enter a second", 0));
-                            dates.add(date);
-                            break;
-                        case 2:
-                            date = LocalDateTime.of(getInt("Enter a year", 0), getInt("Enter a month", 0), getInt("Enter a day", 0), getInt("Enter a minute", 0), getInt("Enter a second", 0));
-                            break;
-                        case 3:
-                            break;
-                        case 4:
                             int i = 0;
                             for (LocalDateTime d : dates) {
                                 System.out.println(i + " : " + d);
                                 i++;
                             }
+                            if (i == 0) {
+                                System.out.println("You currently have no Dates");
+                            }
+                            break;
+                        case 2:
+                            date = LocalDateTime.of(getInt("Enter a year", 0), getInt("Enter a month", 0), getInt("Enter a day", 0), getInt("Enter an hour", 0), getInt("Enter a minute", 0), getInt("Enter a second", 0));
+                            dates.add(date);
+                            break;
+                        case 3:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the date to modify", -1);
+                            System.out.println("You are modifying the following date : ");
+                            System.out.println(dates.get(userChoice3));
+                            date = LocalDateTime.of(getInt("Enter a year", 0), getInt("Enter a month", 0), getInt("Enter an hour", 0), getInt("Enter a minute", 0), getInt("Enter a minute", 0), getInt("Enter a second", 0));
+                            dates.set(userChoice3, date);
+                            break;
+                        case 4:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the date to delete", -1);
+                            dates.remove(userChoice3);
                             break;
                     }
                     break;
