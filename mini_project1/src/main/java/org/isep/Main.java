@@ -307,15 +307,36 @@ public class Main {
                     break;
                 case 6:
                     System.out.println("");
-                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Staff Cabin\n2.\tChange an existing Staff Cabin\n3.\tCreate a new Staff Cabin", 0);
+                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tView a list of all Staffs Cabin\n2.\tAdd a new Staff Cabin\n3.\tChange an existing Staff Cabin\n4.\tRemove an Staff Cabin", 0);
                     switch (userChoice2) {
                         case 0:
                             break;
                         case 1:
+                            int i = 0;
+                            for (StaffCabin s : staffCabins) {
+                                System.out.println(i + " : " + s);
+                                i++;
+                            }
+                            if (i == 0) {
+                                System.out.println("You currently have no Staffs Cabin");
+                            }
                             break;
                         case 2:
+                            staffCabin = new StaffCabin(getInt("Enter an ID", -1), getString("Enter a name"), getString("Enter an address"), getString("Enter a contact"), getInt("Enter an employee ID", -1), getString("Enter the qualifications"),  dates.get(getInt("Enter the index of the hiring date", -1)));
+                            staffCabins.add(staffCabin);
                             break;
                         case 3:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the Staff Cabin to modify", -1);
+                            System.out.println("You are modifying the following Staff Cabin : ");
+                            System.out.println(staffCabins.get(userChoice3));
+                            staffCabin = new StaffCabin(getInt("Enter an ID", -1), getString("Enter a name"), getString("Enter an address"), getString("Enter a contact"), getInt("Enter an employee ID", -1), getString("Enter the qualifications"),  dates.get(getInt("Enter the index of the hiring date", -1)));
+                            staffCabins.set(userChoice3, staffCabin);
+                            break;
+                        case 4:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the Staff Cabin to delete", -1);
+                            staffCabins.remove(userChoice3);
                             break;
                     }
                     break;
