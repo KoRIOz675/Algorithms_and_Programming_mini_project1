@@ -272,15 +272,36 @@ public class Main {
                     break;
                 case 5:
                     System.out.println("");
-                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Pilot\n2.\tChange an existing Pilot\n3.\tCreate a new Pilot", 0);
+                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tView a list of all Pilots\n2.\tAdd a new Pilot\n3.\tChange an existing Pilot\n4.\tRemove an Pilot", 0);
                     switch (userChoice2) {
                         case 0:
                             break;
                         case 1:
+                            int i = 0;
+                            for (AirlinePilot p : pilots) {
+                                System.out.println(i + " : " + p);
+                                i++;
+                            }
+                            if (i == 0) {
+                                System.out.println("You currently have no Pilots");
+                            }
                             break;
                         case 2:
+                            pilot = new AirlinePilot(getInt("Enter an ID", -1), getString("Enter a name"), getString("Enter an address"), getString("Enter a contact"), getInt("Enter an employee ID", -1), getString("Enter a license"), getInt("Enter a number of flight hours", 0), dates.get(getInt("Enter the index of the hiring date", -1)));
+                            pilots.add(pilot);
                             break;
                         case 3:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the pilot to modify", -1);
+                            System.out.println("You are modifying the following pilot : ");
+                            System.out.println(pilots.get(userChoice3));
+                            pilot = new AirlinePilot(getInt("Enter an ID", -1), getString("Enter a name"), getString("Enter an address"), getString("Enter a contact"), getInt("Enter an employee ID", -1), getString("Enter a license"), getInt("Enter a number of flight hours", 0), dates.get(getInt("Enter the index of the hiring date", -1)));
+                            pilots.set(userChoice3, pilot);
+                            break;
+                        case 4:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the pilot to delete", -1);
+                            pilots.remove(userChoice3);
                             break;
                     }
                     break;
