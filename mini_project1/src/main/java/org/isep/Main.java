@@ -237,15 +237,36 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("");
-                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Passenger\n2.\tChange an existing Passenger\n3.\tCreate a new Passenger", 0);
+                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tView a list of all Passengers\n2.\tAdd a new Passenger\n3.\tChange an existing Passenger\n4.\tRemove an Passenger", 0);
                     switch (userChoice2) {
                         case 0:
                             break;
                         case 1:
+                            int i = 0;
+                            for (Passenger p : passengers) {
+                                System.out.println(i + " : " + p);
+                                i++;
+                            }
+                            if (i == 0) {
+                                System.out.println("You currently have no Passengers");
+                            }
                             break;
                         case 2:
+                            passenger = new Passenger(getInt("Enter an ID", -1), getString("Enter a name"), getString("Enter an address"), getString("Enter a contact"), getString("Enter a passport"));
+                            passengers.add(passenger);
                             break;
                         case 3:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the passenger to modify", -1);
+                            System.out.println("You are modifying the following passenger : ");
+                            System.out.println(passengers.get(userChoice3));
+                            passenger = new Passenger(getInt("Enter an ID", -1), getString("Enter a name"), getString("Enter an address"), getString("Enter a contact"), getString("Enter a passport"));
+                            passengers.set(userChoice3, passenger);
+                            break;
+                        case 4:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the passenger to delete", -1);
+                            passengers.remove(userChoice3);
                             break;
                     }
                     break;
