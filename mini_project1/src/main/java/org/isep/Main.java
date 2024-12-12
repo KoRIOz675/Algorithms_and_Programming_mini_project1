@@ -120,7 +120,7 @@ public class Main {
         Airport airport;
         Aircraft aircraft;
         Passenger passenger;
-        AirlinePilot pîlot;
+        AirlinePilot pilot;
         StaffCabin staffCabin;
         Flight flight;
         do {
