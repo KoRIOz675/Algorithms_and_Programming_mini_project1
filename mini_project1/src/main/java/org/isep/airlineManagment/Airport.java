@@ -41,4 +41,12 @@ public class Airport {
     public void getDescription(String description) {
         this.description = description;
     }
+
+
+    @Override
+    public String toString() {
+        return "Airport IAIT : "+ this.name +
+                ", Airport City ID :"+ this.city +
+                ", Airport Description : "+ this.description;
+    }
 }

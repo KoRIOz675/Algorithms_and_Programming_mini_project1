@@ -84,4 +84,12 @@ public class Aircraft {
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
+
+
+    @Override
+    public String toString() {
+        return "Aircraft registration : "+ this.registration +
+                ", Aircraft model : " + this.model +
+                ", Aircraft capacity : " + this.capacity;
+    }
 }

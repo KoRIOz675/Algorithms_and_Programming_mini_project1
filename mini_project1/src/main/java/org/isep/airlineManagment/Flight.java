@@ -109,4 +109,15 @@ public class Flight {
     public void setStatus(String status) {
         this.status = status;
     }
+
+
+    @Override
+    public String toString() {
+        return "Flight Number : "+ this.flightNumber +
+                ", Origin : "+ this.origin +
+                ", Destination : "+ this.destination +
+                ", Departure time : "+ this.departureTime +
+                ", Arrival time : "+ this.arrivalDateTime +
+                ", Status : "+ this.status;
+    }
 }

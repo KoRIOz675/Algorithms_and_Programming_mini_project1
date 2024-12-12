@@ -73,4 +73,15 @@ public class StaffCabin extends Employee {
     public void setQualification(String qualification) {
         this.qualification = qualification;
     }
+
+
+    @Override
+    public String toString() {
+        return "Name : "+ this.name +
+                ", ID : "+ this.id +
+                ", Address : "+ this.address +
+                ", Contact : "+ this.contact +
+                ", Qualification : "+ this.qualification +
+                ", Hiring Date : "+ this.hiringDate;
+    }
 }

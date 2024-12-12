@@ -43,4 +43,14 @@ public class Passenger extends Person {
     public void setPassport(String passport) {
         this.passport = passport;
     }
+
+
+    @Override
+    public String toString() {
+        return "Name : "+ this.name +
+                ", ID : "+ this.id +
+                ", Address : "+ this.address +
+                ", Contact : "+ this.contact +
+                ", Passport : "+ this.passport;
+    }
 }

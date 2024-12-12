@@ -86,4 +86,16 @@ public class AirlinePilot extends Employee {
     public void setFlightHours(int flightHours) {
         this.flightHours = flightHours;
     }
+
+
+    @Override
+    public String toString() {
+        return "Name : "+ this.name +
+                ", ID : "+ this.id +
+                ", Address : "+ this.address +
+                ", Contact : "+ this.contact +
+                ", Licence : "+ this.licence +
+                ", Total flight hours : "+ this.flightHours +
+                ", Hiring Date : "+ this.hiringDate;
+    }
 }
