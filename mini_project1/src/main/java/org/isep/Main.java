@@ -202,15 +202,36 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("");
-                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Aircraft\n2.\tChange an existing Aircraft\n3.\tCreate a new Aircraft", 0);
+                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tView a list of all Aircrafts\n2.\tAdd a new Aircraft\n3.\tChange an existing Aircraft\n4.\tRemove an Aircraft", 0);
                     switch (userChoice2) {
                         case 0:
                             break;
                         case 1:
+                            int i = 0;
+                            for (Aircraft a : aircrafts) {
+                                System.out.println(i + " : " + a);
+                                i++;
+                            }
+                            if (i == 0) {
+                                System.out.println("You currently have no Aircrafts");
+                            }
                             break;
                         case 2:
+                            aircraft = new Aircraft(getString("Enter a registration"), getString("Enter a model"), getInt("Enter a capacity", -1));
+                            aircrafts.add(aircraft);
                             break;
                         case 3:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the aircraft to modify", -1);
+                            System.out.println("You are modifying the following aircraft : ");
+                            System.out.println(aircrafts.get(userChoice3));
+                            aircraft = new Aircraft(getString("Enter a registration"), getString("Enter a model"), getInt("Enter a capacity", -1));
+                            aircrafts.set(userChoice3, aircraft);
+                            break;
+                        case 4:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the aircraft to delete", -1);
+                            aircrafts.remove(userChoice3);
                             break;
                     }
                     break;
