@@ -252,7 +252,6 @@ public class Main {
                 userChoice = -1;
             }
         } while (userChoice < threshold);
-        scanner.close();
         return userChoice;
     }
 
@@ -263,7 +262,6 @@ public class Main {
         scanner = new Scanner(System.in);
         System.out.println(message);
         userChoice = scanner.nextLine();
-        scanner.close();
         return userChoice;
     }
 }
