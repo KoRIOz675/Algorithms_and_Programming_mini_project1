@@ -342,15 +342,36 @@ public class Main {
                     break;
                 case 7:
                     System.out.println("");
-                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tAdd a new Flight\n2.\tChange an existing Flight\n3.\tCreate a new Flight", 0);
+                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tView a list of all Flights\n2.\tAdd a new Flight\n3.\tChange an existing Flight\n4.\tRemove an Flight", 0);
                     switch (userChoice2) {
                         case 0:
                             break;
                         case 1:
+                            int i = 0;
+                            for (Flight f : flights) {
+                                System.out.println(i + " : " + f);
+                                i++;
+                            }
+                            if (i == 0) {
+                                System.out.println("You currently have no Flights");
+                            }
                             break;
                         case 2:
+                            flight = new Flight(getInt("Enter an flight number", -1), airports.get(getInt("Enter the index of the origin Airport", -1)), airports.get(getInt("Enter the index of the destination Airport", -1)), dates.get(getInt("Enter the index of the departure date", -1)), dates.get(getInt("Enter the index of the arrival date", -1)), getString("Enter a status"));
+                            flights.add(flight);
                             break;
                         case 3:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the Flight to modify", -1);
+                            System.out.println("You are modifying the following Flight : ");
+                            System.out.println(flights.get(userChoice3));
+                            flight = new Flight(getInt("Enter an flight number", -1), airports.get(getInt("Enter the index of the origin Airport", -1)), airports.get(getInt("Enter the index of the destination Airport", -1)), dates.get(getInt("Enter the index of the departure date", -1)), dates.get(getInt("Enter the index of the arrival date", -1)), getString("Enter a status"));
+                            flights.set(userChoice3, flight);
+                            break;
+                        case 4:
+                            System.out.println("");
+                            userChoice3 = getInt("Enter the index of the Flight to delete", -1);
+                            flights.remove(userChoice3);
                             break;
                     }
                     break;
