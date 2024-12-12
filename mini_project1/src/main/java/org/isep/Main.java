@@ -167,7 +167,7 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("");
-                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tView a list of all Airports\n2.\tAdd a new Airport\n3.\tChange an existing Airport\n4.\tRemove an Airports", 0);
+                    userChoice2 = getInt("Choose a function. Enter the corresponding number : \n0.\tBack\n1.\tView a list of all Airports\n2.\tAdd a new Airport\n3.\tChange an existing Airport\n4.\tRemove an Airport", 0);
                     switch (userChoice2) {
                         case 0:
                             break;
