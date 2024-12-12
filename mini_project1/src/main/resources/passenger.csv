@@ -1,29 +1,29 @@
-﻿3000001;Thomas MAFILLE;address1;thomas.mafille@eleve.isep.fr;FR92AAAA;;;;;;;;;;;;;;;;;
-3000002;Rémy MAILLARD;address2;remy.maillard@eleve.isep.fr;FR92BBBB;;;;;;;;;;;;;;;;;
-3000003;Anwar AL BITAR;address3;anwar.al-bitar@eleve.isep.fr;FR92CCCC;;;;;;;;;;;;;;;;;
-3000004;Reem ARABI;address4;reem.arabi@eleve.isep.fr;FR92DDDD;;;;;;;;;;;;;;;;;
-3000005;Steven AZOULAY;address5;steven.azoulay@eleve.isep.fr;FR92EEEE;;;;;;;;;;;;;;;;;
-3000006;Anil Kumar BANOTH;address6;anil-kumar.banoth@eleve.isep.fr;FR92FFFF;;;;;;;;;;;;;;;;;
-3000007;Lou-Ann BAPTISTE;address7;lou-ann.baptiste@eleve.isep.fr;FR92GGGG;;;;;;;;;;;;;;;;;
-3000008;Fares BENTALEB;address8;fares.bentaleb@eleve.isep.fr;FR92HHHH;;;;;;;;;;;;;;;;;
-3000009;Raphaël BERDAH;address9;raphael.berdah@eleve.isep.fr;FR92IIII;;;;;;;;;;;;;;;;;
-3000010;Guilhem BERINGER;address10;guilhem.beringer@eleve.isep.fr;FR92JJJJ;;;;;;;;;;;;;;;;;
-3000011;Karl BOU CHAAYA;address11;karl.bou-chaaya@eleve.isep.fr;FR92KKKK;;;;;;;;;;;;;;;;;
-3000012;Ayoub CHEMLALI;address12;ayoub.chemlali@eleve.isep.fr;FR92LLLL;;;;;;;;;;;;;;;;;
-3000013;Margaux CLOAREC;address13;margaux.cloarec@eleve.isep.fr;FR92MMMM;;;;;;;;;;;;;;;;;
-3000014;Sarah DUBRAIL;address14;sarah.dubrail@eleve.isep.fr;FR92NNNN;;;;;;;;;;;;;;;;;
-3000015;Thomas DUCLUZEAU;address15;thomas.ducluzeau@eleve.isep.fr;FR92OOOO;;;;;;;;;;;;;;;;;
-3000016;Clement DURYE;address16;clement.durye@eleve.isep.fr;FR92PPPP;;;;;;;;;;;;;;;;;
-3000017;Marilou GEAY;address17;marilou.geay@eleve.isep.fr;FR92QQQQ;;;;;;;;;;;;;;;;;
-3000018;Helene GRANDJEAN;address18;helene.grandjean@eleve.isep.fr;FR92RRRR;;;;;;;;;;;;;;;;;
-3000019;Nur HOWLADER;address19;nur.howlader@eleve.isep.fr;FR92SSSS;;;;;;;;;;;;;;;;;
-3000020;Dacheng JI;address20;dacheng.ji@eleve.isep.fr;FR92TTTT;;;;;;;;;;;;;;;;;
-3000021;Ruben LEGRANDJACQUES;address21;ruben.legrandjacques@eleve.isep.fr;FR92UUUU;;;;;;;;;;;;;;;;;
-3000022;Muzi LI;address22;muzi.li@eleve.isep.fr;FR92VVVV;;;;;;;;;;;;;;;;;
-3000023;Thomas LUXIMON;address23;thomas.luximon@eleve.isep.fr;FR92WWWW;;;;;;;;;;;;;;;;;
-3000024;Ulysse MERAD;address24;ulysse.merad@eleve.isep.fr;FR92XXXX;;;;;;;;;;;;;;;;;
-3000025;Bharath Kumar MIRIYALA;address25;bharath-kumar.miriyala@eleve.isep.fr;FR92YYYY;;;;;;;;;;;;;;;;;
-3000026;Gregoire SARTORIUS;address26;gregoire.sartorius@eleve.isep.fr;FR92ZZZZ;;;;;;;;;;;;;;;;;
-3000027;Angel SEGUI;address27;angel.segui@eleve.isep.fr;FR78AAAA;;;;;;;;;;;;;;;;;
-3000028;Raphael SLAMA;address28;raphael.slama@eleve.isep.fr;FR78BBBB;;;;;;;;;;;;;;;;;
-3000029;Zhekai YAN;address29;zhekai.yan@eleve.isep.fr;FR78CCCC;;;;;;;;;;;;;;;;;
+﻿3000001;Thomas MAFILLE;address1;thomas.mafille@eleve.isep.fr;FR92AAAA
+3000002;Rémy MAILLARD;address2;remy.maillard@eleve.isep.fr;FR92BBBB
+3000003;Anwar AL BITAR;address3;anwar.al-bitar@eleve.isep.fr;FR92CCCC
+3000004;Reem ARABI;address4;reem.arabi@eleve.isep.fr;FR92DDDD
+3000005;Steven AZOULAY;address5;steven.azoulay@eleve.isep.fr;FR92EEEE
+3000006;Anil Kumar BANOTH;address6;anil-kumar.banoth@eleve.isep.fr;FR92FFFF
+3000007;Lou-Ann BAPTISTE;address7;lou-ann.baptiste@eleve.isep.fr;FR92GGGG
+3000008;Fares BENTALEB;address8;fares.bentaleb@eleve.isep.fr;FR92HHHH
+3000009;Raphaël BERDAH;address9;raphael.berdah@eleve.isep.fr;FR92IIII
+3000010;Guilhem BERINGER;address10;guilhem.beringer@eleve.isep.fr;FR92JJJJ
+3000011;Karl BOU CHAAYA;address11;karl.bou-chaaya@eleve.isep.fr;FR92KKKK
+3000012;Ayoub CHEMLALI;address12;ayoub.chemlali@eleve.isep.fr;FR92LLLL
+3000013;Margaux CLOAREC;address13;margaux.cloarec@eleve.isep.fr;FR92MMMM
+3000014;Sarah DUBRAIL;address14;sarah.dubrail@eleve.isep.fr;FR92NNNN
+3000015;Thomas DUCLUZEAU;address15;thomas.ducluzeau@eleve.isep.fr;FR92OOOO
+3000016;Clement DURYE;address16;clement.durye@eleve.isep.fr;FR92PPPP
+3000017;Marilou GEAY;address17;marilou.geay@eleve.isep.fr;FR92QQQQ
+3000018;Helene GRANDJEAN;address18;helene.grandjean@eleve.isep.fr;FR92RRRR
+3000019;Nur HOWLADER;address19;nur.howlader@eleve.isep.fr;FR92SSSS
+3000020;Dacheng JI;address20;dacheng.ji@eleve.isep.fr;FR92TTTT
+3000021;Ruben LEGRANDJACQUES;address21;ruben.legrandjacques@eleve.isep.fr;FR92UUUU
+3000022;Muzi LI;address22;muzi.li@eleve.isep.fr;FR92VVVV
+3000023;Thomas LUXIMON;address23;thomas.luximon@eleve.isep.fr;FR92WWWW
+3000024;Ulysse MERAD;address24;ulysse.merad@eleve.isep.fr;FR92XXXX
+3000025;Bharath Kumar MIRIYALA;address25;bharath-kumar.miriyala@eleve.isep.fr;FR92YYYY
+3000026;Gregoire SARTORIUS;address26;gregoire.sartorius@eleve.isep.fr;FR92ZZZZ
+3000027;Angel SEGUI;address27;angel.segui@eleve.isep.fr;FR78AAAA
+3000028;Raphael SLAMA;address28;raphael.slama@eleve.isep.fr;FR78BBBB
+3000029;Zhekai YAN;address29;zhekai.yan@eleve.isep.fr;FR78CCCC

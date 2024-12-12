@@ -66,9 +66,10 @@ public class Main {
             BufferedReader airportBufferedReader = new BufferedReader(airportReader);
 
             String line;
-            String[] text = airportBufferedReader.readLine().split(";");
+            String[] text;
 
             while ((line = airportBufferedReader.readLine()) != null) {
+                text = line.split(";");
                 airports.add(new Airport(text[0], text[1], text[2]));
             }
             airportBufferedReader.close();
@@ -109,7 +110,7 @@ public class Main {
 
             while ((line = passengerBufferedReader.readLine()) != null) {
                 text = line.split(";");
-                passengers.add(new Passenger(Integer.parseInt(text[0]),text[1],text[2],text[3],text[4]));
+                // passengers.add(new Passenger(Integer.parseInt(text[0]),text[1],text[2],text[3],text[4]));
             }
             passengerBufferedReader.close();
 
@@ -121,7 +122,7 @@ public class Main {
 
 
         try {
-            FileReader pilotReader = new FileReader(filePath+"passenger.csv");
+            FileReader pilotReader = new FileReader(filePath+"pilots.csv");
             BufferedReader pilotBufferedReader = new BufferedReader(pilotReader);
 
             String line;
@@ -141,7 +142,7 @@ public class Main {
 
 
         try {
-            FileReader timeTableReader = new FileReader(filePath+"passenger.csv");
+            FileReader timeTableReader = new FileReader(filePath+"timetable.csv");
             BufferedReader timeTableBufferedReader = new BufferedReader(timeTableReader);
 
             String line;
