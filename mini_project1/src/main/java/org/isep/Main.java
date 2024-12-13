@@ -110,7 +110,12 @@ public class Main {
 
             while ((line = passengerBufferedReader.readLine()) != null) {
                 text = line.split(";");
-                // passengers.add(new Passenger(Integer.parseInt(text[0]),text[1],text[2],text[3],text[4]));
+                try {
+                    passengers.add(new Passenger(Integer.parseInt(text[0]),text[1],text[2],text[3],text[4]));
+                } catch (Exception e) {
+                    text[0] = text[0].substring(1);
+                    passengers.add(new Passenger(Integer.parseInt(text[0]),text[1],text[2],text[3],text[4]));
+                }
             }
             passengerBufferedReader.close();
 
